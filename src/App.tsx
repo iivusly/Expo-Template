@@ -1,11 +1,18 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import styles from './styles/global'
+import styled from 'styled-components/native'
+
+const Holder = styled.View`
+    flex: 1;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+`
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
-  );
+    return (
+        <Holder>
+            <Text>Open up App.tsx to start working on your app!</Text>
+        </Holder>
+    )
 }
