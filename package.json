@@ -1,12 +1,10 @@
 {
   "main": "index.js",
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "web": "expo start --web",
     "start": "react-native start",
     "test": "jest",
-    "dev": "expo start"
+    "dev": "expo start",
+    "clean": "npx prettier --write ."
   },
   "dependencies": {
     "expo": "~41.0.0",
