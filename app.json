@@ -5,6 +5,14 @@
     "name": "Expo-Template",
     "slug": "Expo-Template",
     "version": "1.0.0",
-    "assetBundlePatterns": ["src/assets/**/*.*"]
+    "assetBundlePatterns": [
+      "src/assets/**/*.*"
+    ],
+    "android": {
+      "package": "com.test.test"
+    },
+    "ios": {
+      "bundleIdentifier": "com.test.test"
+    }
   }
 }
