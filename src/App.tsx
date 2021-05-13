@@ -1,13 +1,16 @@
 import React from "react";
-import { Text } from "react-native";
 import styled from "styled-components/native";
 
 const Holder = styled.View`
   flex: 1;
-  background: #fff;
+  background: #222;
   align-items: center;
   justify-content: center;
 `;
+
+const Text = styled.Text`
+  color: white;
+`
 
 export default function App() {
   return (
