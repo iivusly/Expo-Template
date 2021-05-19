@@ -23,10 +23,7 @@ export default function Home() {
 }
 
 const options = {
-    headerStyle: {
-        backgroundColor: '#111',
-    },
-    headerTintColor: '#fff',
+    headerShown: false,
 }
 
 export { options }
