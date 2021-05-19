@@ -1,23 +1,30 @@
 import React from 'react'
-import styled from 'styled-components/native'
-import { StatusBar } from 'expo-status-bar'
+import { createStackNavigator } from '@react-navigation/stack'
+import { NavigationContainer } from '@react-navigation/native'
 
-const Holder = styled.View`
-    flex: 1;
-    background: #222;
-    align-items: center;
-    justify-content: center;
-`
+// Update Pages here
+import * as Home from './pages/Home'
 
-const Text = styled.Text`
-    color: white;
-`
+const Pages = {
+    Home,
+}
+
+const Stack = createStackNavigator()
 
 export default function App() {
     return (
-        <Holder>
-            <StatusBar style='light' />
-            <Text>Open up App.tsx to start working on your app!</Text>
-        </Holder>
+        <NavigationContainer>
+            <Stack.Navigator>
+                {Object.entries(Pages).map((Page) => {
+                    return (
+                        <Stack.Screen
+                            name={Page[0]}
+                            component={Page[1].default}
+                            options={Page[1].options ? Page[1].options : {}}
+                        />
+                    )
+                })}
+            </Stack.Navigator>
+        </NavigationContainer>
     )
 }
