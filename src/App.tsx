@@ -18,6 +18,7 @@ export default function App() {
                 {Object.entries(Pages).map((Page) => {
                     return (
                         <Stack.Screen
+                            key={Page[0]}
                             name={Page[0]}
                             component={Page[1].default}
                             options={Page[1].options ? Page[1].options : {}}
