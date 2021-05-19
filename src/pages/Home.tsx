@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <Holder>
             <StatusBar style="light" />
-            <Text>Open up App.tsx to start working on your app!</Text>
+            <Text>This is a home page!</Text>
         </Holder>
     )
 }
