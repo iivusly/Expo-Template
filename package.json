@@ -5,6 +5,7 @@
     "test": "jest",
     "dev": "expo start --dev",
     "dev:android": "start cmd.exe /c expo start --localhost --android & cd %APPDATA%\\..\\Local\\Android\\Sdk\\emulator && start cmd.exe /c FOR /F %i IN ('emulator.exe -list-avds') DO emulator.exe -avd %i",
+    "dev:ios": "expo start --localhost --ios",
     "clean": "npx prettier --write .",
     "build:andorid": "expo build:android",
     "build:ios": "expo build:ios"
