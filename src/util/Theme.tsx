@@ -2,7 +2,6 @@ import React, { useEffect, useState, FunctionComponent } from 'react'
 import { ThemeProvider, DefaultTheme } from 'styled-components/native'
 import { Appearance } from 'react-native'
 
-
 const Dark: DefaultTheme = {
     background: '#222',
     text: '#fff',
@@ -22,7 +21,8 @@ const ThemeHandler: FunctionComponent = ({ children }) => {
         Appearance.addChangeListener(({ colorScheme }) => {
             setTheme(colorScheme === 'dark' ? Dark : Light)
         })
-    }, [Appearance])
+    })
+
     return <ThemeProvider theme={Theme}>{children}</ThemeProvider>
 }
 

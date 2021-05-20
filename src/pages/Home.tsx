@@ -2,13 +2,10 @@ import React from 'react'
 import styled from 'styled-components/native'
 import { StatusBar } from 'expo-status-bar'
 
-
-
 export default function Home() {
-
     const Holder = styled.View`
         flex: 1;
-        background: ${props => props.theme.background};
+        background: ${(props) => props.theme.background};
         align-items: center;
         justify-content: center;
     `
