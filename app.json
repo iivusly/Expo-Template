@@ -6,6 +6,7 @@
         "slug": "Expo-Template",
         "version": "1.0.0",
         "assetBundlePatterns": ["src/assets/**/*.*"],
+        "userInterfaceStyle": "automatic",
         "android": {
             "package": "com.test.test"
         },
