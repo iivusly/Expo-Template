@@ -1,5 +1,6 @@
 import React, { useEffect, useState, FunctionComponent } from 'react'
 import { ThemeProvider, DefaultTheme } from 'styled-components/native'
+import { StatusBar } from 'expo-status-bar'
 import { Appearance } from 'react-native'
 
 const Dark: DefaultTheme = {
@@ -23,7 +24,12 @@ const ThemeHandler: FunctionComponent = ({ children }) => {
         })
     })
 
-    return <ThemeProvider theme={Theme}>{children}</ThemeProvider>
+    return (
+        <ThemeProvider theme={Theme}>
+            <StatusBar style="auto" />
+            {children}
+        </ThemeProvider>
+    )
 }
 
 export { ThemeHandler }

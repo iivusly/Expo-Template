@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components/native'
-import { StatusBar } from 'expo-status-bar'
 
 export default function Home() {
     const Holder = styled.View`
@@ -16,7 +15,6 @@ export default function Home() {
 
     return (
         <Holder>
-            <StatusBar style="auto" />
             <Text>This is a home page!</Text>
         </Holder>
     )
