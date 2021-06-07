@@ -2,11 +2,8 @@ import React from 'react'
 import { Button } from 'react-native'
 import styled from 'styled-components/native'
 import { StatusBar } from 'expo-status-bar'
-import Notifications from '@util/Notification'
 
 export default function Home() {
-    let NotificationHandler = new Notifications()
-
     const Holder = styled.View`
         flex: 1;
         background: ${(props) => props.theme.background};
